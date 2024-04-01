@@ -12,7 +12,7 @@ handlerBallDiameter = 17.5;
 ledHolderHeigh =  70;
 ledHolderTieCaveOffset =  5;
 ledHeatsinkHeigh = 7;
-ledHeatsinkWidth = 17;
+ledHeatsinkWidth = 18;
 
 /* cable tie */
 cableTieWidth = 4;
