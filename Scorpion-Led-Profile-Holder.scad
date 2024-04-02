@@ -24,10 +24,10 @@ cableTieWidth = 4;
 
 // SEE  undersized holes here: https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/The_OpenSCAD_Language#cylinder
 
-handlerExternalDiameter = max(handlerInternalDiameter, handlerBallDiameter) + wallThikness;
+handlerExternalDiameter = max(handlerInternalDiameter, handlerBallDiameter) + 2 * wallThikness;
 ledHolderExternalDiameter = sqrt(ledHeatsinkHeigh * ledHeatsinkHeigh + 
             ledHeatsinkWidth * ledHeatsinkWidth / 4) * 2 
-            + wallThikness;
+            + 2 * wallThikness;
 
 handlerExternalDiameterFixed = handlerExternalDiameter / cos(180 / 8);
 ledHolderExternalDiameterFixed = ledHolderExternalDiameter / cos(180 / 8);
