@@ -29,7 +29,10 @@ This 3D model is highly customizable. So you can configure it for you needs.
 
 ### Pre-rendered STL
 
-**TODO add**
+If you do not need any customizations and would only like to have the same holder as I have – you can download prerendered STL file from Thingiverse:
+
+  * https://www.thingiverse.com/thing:6643654
+
 
 ### Model Parameters
 
