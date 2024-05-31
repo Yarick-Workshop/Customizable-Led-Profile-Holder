@@ -29,7 +29,14 @@ led_Holder_External_Diameter = sqrt(led_Profile_Heigh * led_Profile_Heigh +
 handler_External_Diameter_Fixed = handler_External_Diameter / cos(180 / 8);
 led_Holder_External_Diameter_Fixed = led_Holder_External_Diameter / cos(180 / 8);
 
-holder();
+translate([0,0,20]) 
+rotate([180,0,0])
+    holder();
+
+color("Black", 0.4)
+    translate([0, 0, 7]) 
+    rotate([-90, 0, 0]) 
+        cylinder(h = 200, d = handler_Internal_Diameter);
 
 module holder()
 {
@@ -65,6 +72,7 @@ module led_holder()
 {
     translate([0, 0, led_Holder_External_Diameter * 0.5])
         rotate([90, 0, 0])
+        {
             difference()
             {
                 union()
@@ -88,6 +96,9 @@ module led_holder()
                         scale([led_Holder_External_Diameter_Fixed * 1.4, led_Holder_Length - 3.5 * led_Holder_Tie_Cave_Offset, ])
                             cylinder(h=led_Holder_External_Diameter_Fixed + delta, d=1, center=true, $fn=8);
             }
+            color([0.69,0.69,0.69], 0.25)
+                cube([led_Profile_Width, led_Profile_Heigh, 500], center=true);
+        }
 }
 module workpiece_with_tie_cave(diameter, diameter_fixed, height, cave_offset)
 {
@@ -105,6 +116,7 @@ module workpiece_with_tie_cave(diameter, diameter_fixed, height, cave_offset)
 
 module workpiece(diameter, diameter_fixed, height)
 {
+    //color("Brown")
     //external figure 
     difference()
     {
