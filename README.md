@@ -11,6 +11,10 @@ This work is licensed under a
 
 # LED profile holder "Scorpion"
 
+<p align="center" width="100%">
+    <img width="75%" src="media/logo.png">
+</p>
+
 The model was designed for producing on a 3D printer.
 
 ⚠️ **In case of any questions** – do not hesitate to contact the author in Telegram group ([see below](#contact-me)) and ask.
